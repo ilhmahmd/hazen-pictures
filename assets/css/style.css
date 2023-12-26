@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+    background-color: #2d312e;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    display: flex;
+    transition: background-color 0.5s ease; /* Transisi perubahan warna */
+}
+
+nav.solid {
+    background-color: #2d312e86;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #b3e45a;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+aside {
+  flex: 1;
+}
+
+footer {
+    background-color: #f4f4f4;
+    color: #727272;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    gap: 2rem;
+}
+
+.footer-content p {
+    margin-top: 1px;
+    font-weight: 600;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px; 
+}
+
+.card2 h1 {
+    color:#2d312e;
+    font-weight: 800;
+    text-align: center;
+    font-size: 70px;
+  }
+
+h2 {
+  color:#2d312e;
+  font-weight: 400;
+  text-align: center;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cover {
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    height: 45vh;
+    overflow: hidden;
+    position: relative; 
+  }
+  
+  .slider {
+    display: flex;
+    height: 100%;
+  }
+  
+  .slider img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .slider img:nth-child(2) {
+    display: none;
+  }
+  
+  
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+  }
+  
+  .slide-content h1, .slide-content p {
+    margin: 0;
+  }
+  
+  .slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .slide-button.prev {
+    left: 20px;
+  }
+  
+  .slide-button.next {
+    right: 20px;
+  }
+  
+
+.cover2 {
+    font-size: 20px;
+    padding: 60px;
+    background: url('/assets/pic/trans2.png') center/cover;
+    text-align: center;
+    color: white;
+    height: 45vh;
+  }
+
+  .cover3 {
+    font-size: 20px;
+    padding: 60px;
+    background: url('/assets/pic/trans.png') center/cover;
+    text-align: center;
+    color: white;
+    height: 45vh;
+  }
+
+
+.featured-image {
+  width: 100%;
+  max-height: 370px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.featured-image2 {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  width: 600px;
+  height: 500px;
+}
+
+.card4 {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    width: 1000px;
+    height: 800px;
+    margin-bottom: 80px;
+  }
+  
+
+.card2 {
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+  }
+
+  .card22 {
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+  }
+
+.card3 {
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+  }
+
+.card3 h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+  
+.judul h3{
+    font-weight: 400;
+    color: #2d312e;
+    text-align: center;
+    flex-flow: column nowrap;
+}
+
+.isi {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.isi2 {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.testimoni {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.testimoni-card {
+    max-width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 50px;
+    z-index: -1;
+    justify-content: center;
+   
+}
+
+.testimoni-card:hover {
+    transform: scale(2.05);
+}
+
+.testimoni-card header {
+    position: relative;
+}
+
+.testimoni-card figure img {
+    width: 100%;
+    height: 10%; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px; 
+}
+
+
+.testimoni-card figcaption {
+    padding: 15px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.testimoni-card h4 {
+    margin-bottom: 10px;
+    color: #2d312e;
+}
+
+.testimoni-card p {
+    color: #666;
+}
+
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+
+  main {
+    padding: 20px 40px;
+  }
+
+  main .isi {
+    flex-flow: column nowrap; 
+    align-items: center; 
+  }
+
+  
+
+  .card {
+    max-width: 100%;
+    height: 380px; 
+  }
+
+  .card2 {
+    max-width: 100%;
+    height: 380px;
+    margin-top: 20px;
+  }
+
+  .card22 {
+    max-width: 100%;
+    height: 380px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+  
+  .card3 {
+    max-width: 100%;
+    height: 30px;
+    margin-top: -60px;
+    margin-bottom: 200px;
+
+  }
+
+  .card4 {
+    max-width: 450px;
+    height: 480px; 
+  }
+
+  .card p {
+    margin-top: -50px;
+  }
+
+  .testimoni-card {
+    margin-bottom: -50px;
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+}
+
+.footer-content p {
+    margin-left: -20px;
+    font-size: 13px;
+}
+  
+}
+
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
